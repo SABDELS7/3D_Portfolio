@@ -25,7 +25,7 @@ const About = () => {
             <div>
               <p className="grid-headtext">Hi, I’m Abderrahmane Salmi</p>
               <p className="grid-subtext">
-                Software Engineering Student, I have honed my skills in both frontend and backend dev, creating dynamic
+                Software Engineering Student, I have honed my skills in frontend, backend and devops creating dynamic
                 and responsive websites.
               </p>
             </div>
