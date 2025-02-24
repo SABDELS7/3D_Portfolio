@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import { navLinks } from '../constants/index.js';
 
-import arcade from '/assets/Arcade.png';
+import arcade from '/assets/Arcade_rm.png';
 
 const NavItems = ({ onClick = () => {} }) => (
   <ul className="nav-ul">
@@ -27,7 +27,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center py-5 mx-auto c-space">
           <a href="/" className="flex items-center text-neutral-400 font-bold text-xl hover:text-white transition-colors">
-            <img src={arcade} alt="Logo" className="w-10 h-10 rounded-full mr-3" />
+            <img src={arcade} alt="Logo" className="w-20 h-20 rounded-full mr-3" />
             Abderrahmane Salmi
           </a>
 

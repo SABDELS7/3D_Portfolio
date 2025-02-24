@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="c-space pt-7 pb-3 border-t border-black-300 flex justify-between items-center flex-wrap gap-5">
-      <div className="text-white-500 flex gap-2">
+      <div className="text-white-500 flex gap-2  hover:text-white">
         <p>Terms & Conditions</p>
         <p>|</p>
         <p>Privacy Policy</p>
@@ -31,7 +31,7 @@ const Footer = () => {
       </div>
 
 
-      <p className="text-white-500">© {new Date().getFullYear()} Abderrahmane Salmi. All rights reserved.</p>
+      <p className="text-white-500  hover:text-white">© {new Date().getFullYear()} Abderrahmane Salmi. All rights reserved.</p>
     </footer>
   );
 };

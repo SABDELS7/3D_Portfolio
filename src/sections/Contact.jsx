@@ -6,11 +6,10 @@ import Alert from '../components/Alert.jsx';
 
 const Contact = () => {
   const formRef = useRef();
-
   const { alert, showAlert, hideAlert } = useAlert();
   const [loading, setLoading] = useState(false);
-
   const [form, setForm] = useState({ name: '', email: '', message: '' });
+
 
   const handleChange = ({ target: { name, value } }) => {
     setForm({ ...form, [name]: value });
@@ -21,20 +20,15 @@ const Contact = () => {
     setLoading(true);
 
     emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,    //service_arqrjt8    template_dplwmnl
+      .sendForm(
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: 'Abderrahmane Salmi',
-          from_email: form.email,
-          to_email: 'salmiabdderrahmane@gmail.com',
-          message: form.message,
-        },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,    //yjzSk1_tER2-_sWpE
+        formRef.current,
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
       )
       .then(
         () => {
+          // console.log('EmailJS Response:', response); // Log the response
           setLoading(false);
           showAlert({
             show: true,
@@ -43,16 +37,16 @@ const Contact = () => {
           });
 
           setTimeout(() => {
-            hideAlert(false);
+            hideAlert();
             setForm({
               name: '',
               email: '',
               message: '',
             });
-          }, [3000]);
+            setLoading(false);
+          }, 3000);
         },
         (error) => {
-          setLoading(false);
           console.error(error);
 
           showAlert({
@@ -60,6 +54,7 @@ const Contact = () => {
             text: "I didn't receive your message 😢",
             type: 'danger',
           });
+          setLoading(false);
         },
       );
   };
@@ -120,7 +115,6 @@ const Contact = () => {
 
             <button className="field-btn" type="submit" disabled={loading}>
               {loading ? 'Sending...' : 'Send Message'}
-
               <img src="/assets/arrow-up.png" alt="arrow-up" className="field-btn_arrow" />
             </button>
           </form>
