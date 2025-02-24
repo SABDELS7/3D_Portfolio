@@ -9,6 +9,7 @@ import WorkExperience from './sections/Experience.jsx';
 import DownloadCV from './sections/DownloadCV.jsx';
 import Slider from './sections/Slider.jsx';
 import SliderCertif from './sections/SliderCertif.jsx';
+import { Analytics } from "@vercel/analytics/react";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
       <Contact />
       <Footer />
       <DownloadCV />
+      <Analytics />
     </main>
   );
 };
