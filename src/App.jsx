@@ -10,7 +10,7 @@ import DownloadCV from './sections/DownloadCV.jsx';
 import Slider from './sections/Slider.jsx';
 import SliderCertif from './sections/SliderCertif.jsx';
 import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 const App = () => {
   return (
