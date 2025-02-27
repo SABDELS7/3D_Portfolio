@@ -58,7 +58,7 @@ export const clientReviews = [
 
 export const myProjects = [
   {
-    title: 'Ferever - E-Commerce website',
+    title: 'TimeLuxe - E-Commerce website',
     desc: 'Forever is a sleek and user-friendly ecommerce platform designed to simplify online shopping for both businesses and customers. Forever makes it easy to browse, discover, and purchase products effortlessly. Forever provides a seamless journey from product exploration to checkout. Its clean design, fast loading times, and secure payment options ensure a reliable and enjoyable shopping experience for everyone.',
     subdesc:
       'Built as a dynamic and modern ecommerce website, Forever is designed for optimal performance and scalability. Leveraging the power of React for a seamless user interface, Node.js for robust backend functionality, and MongoDB for efficient data management, Forever is the perfect solution for businesses looking to create a reliable and high-performing online store.',

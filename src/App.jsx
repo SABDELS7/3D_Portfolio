@@ -10,11 +10,13 @@ import DownloadCV from './sections/DownloadCV.jsx';
 import Slider from './sections/Slider.jsx';
 import SliderCertif from './sections/SliderCertif.jsx';
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const App = () => {
   return (
     <main className="max-w-7xl mx-auto relative">
       <Navbar />
+      <DownloadCV />
       <Hero />
       <About />
       <Slider />
@@ -24,8 +26,8 @@ const App = () => {
       <WorkExperience />
       <Contact />
       <Footer />
-      <DownloadCV />
       <Analytics />
+      <SpeedInsights />
     </main>
   );
 };
