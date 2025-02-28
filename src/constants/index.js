@@ -59,9 +59,9 @@ export const clientReviews = [
 export const myProjects = [
   {
     title: 'TimeLuxe - E-Commerce website',
-    desc: 'Forever is a sleek and user-friendly ecommerce platform designed to simplify online shopping for both businesses and customers. Forever makes it easy to browse, discover, and purchase products effortlessly. Forever provides a seamless journey from product exploration to checkout. Its clean design, fast loading times, and secure payment options ensure a reliable and enjoyable shopping experience for everyone.',
+    desc: 'TimeLuxe is a sleek and user-friendly ecommerce website for watches designed to simplify online shopping for both businesses and customers. TimeLuxe makes it easy to browse, discover, and purchase products effortlessly. TimeLuxe provides a seamless journey from product exploration to checkout. Its clean design, fast loading times, and secure payment options ensure a reliable and enjoyable shopping experience for everyone.',
     subdesc:
-      'Built as a dynamic and modern ecommerce website, Forever is designed for optimal performance and scalability. Leveraging the power of React for a seamless user interface, Node.js for robust backend functionality, and MongoDB for efficient data management, Forever is the perfect solution for businesses looking to create a reliable and high-performing online store.',
+      'Built as a dynamic and modern ecommerce website, TimeLuxe is designed for optimal performance and scalability. Leveraging the power of React for a seamless user interface, Node.js for robust backend functionality, and MongoDB for efficient data management, Forever is the perfect solution for businesses looking to create a reliable and high-performing online store.',
     // href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
     texture: '/textures/project/project1.mp4',
     logo: '/assets/logo.png',

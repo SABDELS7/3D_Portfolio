@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Globe from 'react-globe.gl';
 
 import Button from '../components/Button.jsx';
@@ -15,6 +15,42 @@ const About = () => {
     }, 2000);
   };
 
+
+//   // observer.js
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  },
+  {
+    threshold: 0.9, // Trigger when 10% of the element is visible
+  }
+);
+
+// Observe all elements with the class `animate-fade-in-up`
+document.querySelectorAll('.animate-fade-in-up').forEach((element) => {
+  observer.observe(element);
+});
+
+
+// useEffect(() => {
+//   const elements = document.querySelectorAll("div[data-visual]"),
+//     observer = new IntersectionObserver((entries) => {
+//       entries.forEach((entry) => {
+//         if (entry.isIntersecting) {
+//           entry.target
+//             .closest("div[data-visual]")
+//             .setAttribute("data-visual", "true");
+//         }
+//       });
+//     });
+
+//   elements.forEach((el) => observer.observe(el));
+// }, []);
+
   return (
     <section className="c-space my-20" id="about">
       <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
@@ -25,21 +61,21 @@ const About = () => {
             <div>
               <p className="grid-headtext">Hi, I’m Abderrahmane Salmi</p>
               <p className="grid-subtext">
-                Software Engineering Student, I have honed my skills in frontend, backend and devops creating dynamic
+                Software Engineering Student, I have honed my skills in frontend, backend, creating dynamic
                 and responsive websites.
               </p>
             </div>
           </div>
         </div>
 
-        <div className="col-span-1 xl:row-span-3">
+        <div className="col-span-1 xl:row-span-3 " data-visual="false">
           <div className="grid-container">
             <img src="assets/tech.png" alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain" />
 
             <div>
               <p className="grid-headtext">Tech Stack</p>
               <p className="grid-subtext">
-              I specialize in various programming languages, frameworks and tools. With this skill set, I build robust, scalable, and efficient solutions.
+              I specialize in various programming languages, frameworks and tools. With this skill set, I build robust and scalable solutions.
               </p>
             </div>
           </div>

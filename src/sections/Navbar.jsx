@@ -23,12 +23,11 @@ const Navbar = () => {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-black/90">
-      <div className="max-w-7xl mx-auto">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-black/90 h-20">
+      <div className="max-w-7xl mx-auto mb-5">
         <div className="flex justify-between items-center py-5 mx-auto c-space">
           <a href="/" className="flex items-center text-neutral-400 font-bold text-xl hover:text-white transition-colors">
             <img src={arcade} alt="Logo" className="w-20 h-20 rounded-full mr-3" />
-            Abderrahmane Salmi
           </a>
 
           <button

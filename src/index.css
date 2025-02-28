@@ -15,7 +15,7 @@ body {
 
 @layer utilities {
   .c-space {
-    @apply sm:px-10 px-5;
+    @apply sm:px-10 px-5 py-5;
   }
 
   .head-text {
@@ -27,7 +27,7 @@ body {
   }
 
   .nav-li {
-    @apply text-neutral-400 hover:text-white font-generalsans max-sm:hover:bg-black-500 max-sm:w-full max-sm:rounded-md py-2 max-sm:px-5;
+    @apply text-neutral-400 hover:text-white font-generalsans max-sm:hover:bg-black-500 max-sm:w-full max-sm:rounded-md py-5 max-sm:px-5;
   }
 
   .nav-li_a {
@@ -194,4 +194,27 @@ body {
   100% {
     transform: rotate(0deg);
   }
+
+  
+}
+
+/* styles.css */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  opacity: 0; /* Start hidden */
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.animate-fade-in-up.visible {
+  opacity: 1; /* Make visible when in viewport */
 }
