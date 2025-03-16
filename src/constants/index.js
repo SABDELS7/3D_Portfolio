@@ -64,7 +64,7 @@ export const myProjects = [
       'Built as a dynamic and modern ecommerce website, TimeLuxe is designed for optimal performance and scalability. Leveraging the power of React for a seamless user interface, Node.js for robust backend functionality, and MongoDB for efficient data management, Forever is the perfect solution for businesses looking to create a reliable and high-performing online store.',
     // href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
     texture: '/textures/project/project1.mp4',
-    logo: '/assets/logo.png',
+    logo: '/assets/TimeLuxe.png',
     logoStyle: {
       backgroundColor: '#FFFFFF',
       border: '0.2px solid #36201D',

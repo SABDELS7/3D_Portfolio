@@ -7,6 +7,7 @@ import Contact from './sections/Contact.jsx';
 import Projects from './sections/Projects.jsx';
 import WorkExperience from './sections/Experience.jsx';
 import DownloadCV from './sections/DownloadCV.jsx';
+import Chatbot from './sections/Chatbot.jsx';
 import Slider from './sections/Slider.jsx';
 import SliderCertif from './sections/SliderCertif.jsx';
 import { Analytics } from "@vercel/analytics/react";
@@ -17,6 +18,7 @@ const App = () => {
     <main className="max-w-7xl mx-auto relative">
       <Navbar />
       <DownloadCV />
+      <Chatbot />
       <Hero />
       <About />
       <Slider />
