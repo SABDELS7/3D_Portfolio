@@ -63,7 +63,7 @@ export const myProjects = [
     subdesc:
       'Built as a dynamic and modern ecommerce website, TimeLuxe is designed for optimal performance and scalability. Leveraging the power of React for a seamless user interface, Node.js for robust backend functionality, and MongoDB for efficient data management, Forever is the perfect solution for businesses looking to create a reliable and high-performing online store.',
     // href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
-    texture: '/textures/project/project1.mp4',
+    texture: '/textures/project/TimeLuxe.mp4',
     logo: '/assets/TimeLuxe.png',
     logoStyle: {
       backgroundColor: '#FFFFFF',
@@ -101,6 +101,16 @@ export const myProjects = [
         id: 6,
         name: 'MongoDB',
         path: '/assets/mongodb.png',
+      },
+      {
+        id: 7,
+        name: 'Git',
+        path: '/assets/git.png',
+      },
+      {
+        id: 8,
+        name: 'VS Code',
+        path: '/assets/vs_code.png',
       },
     ],
   },
@@ -149,84 +159,191 @@ export const myProjects = [
         name: 'MySql',
         path: '/assets/mysql_icon.png',
       },
+      {
+        id: 7,
+        name: 'Git',
+        path: '/assets/git.png',
+      },
+      {
+        id: 8,
+        name: 'VS Code',
+        path: '/assets/vs_code.png',
+      },
+      {
+        id: 9,
+        name: 'Intellij Idea',
+        path: '/assets/intellij.png',
+      },
     ],
   },
-  // {
-  //   title: 'CarePulse - Health Management System',
-  //   desc: 'An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.',
-  //   subdesc:
-  //     'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
-  //   href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
-  //   texture: '/textures/project/project3.mp4',
-  //   logo: '/assets/project-logo3.png',
-  //   logoStyle: {
-  //     backgroundColor: '#60f5a1',
-  //     background:
-  //       'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
-  //     border: '0.2px solid rgba(208, 213, 221, 1)',
-  //     boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
-  //   },
-  //   spotlight: '/assets/spotlight3.png',
-  //   tags: [
-  //     {
-  //       id: 1,
-  //       name: 'React.js',
-  //       path: '/assets/react.svg',
-  //     },
-  //     {
-  //       id: 2,
-  //       name: 'TailwindCSS',
-  //       path: 'assets/tailwindcss.png',
-  //     },
-  //     {
-  //       id: 3,
-  //       name: 'TypeScript',
-  //       path: '/assets/typescript.png',
-  //     },
-  //     {
-  //       id: 4,
-  //       name: 'Framer Motion',
-  //       path: '/assets/framer.png',
-  //     },
-  //   ],
-  // },
-  // {
-  //   title: 'Horizon - Online Banking Platform',
-  //   desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
-  //   subdesc:
-  //     'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
-  //   href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
-  //   texture: '/textures/project/project4.mp4',
-  //   logo: '/assets/project-logo4.png',
-  //   logoStyle: {
-  //     backgroundColor: '#0E1F38',
-  //     border: '0.2px solid #0E2D58',
-  //     boxShadow: '0px 0px 60px 0px #2F67B64D',
-  //   },
-  //   spotlight: '/assets/spotlight4.png',
-  //   tags: [
-  //     {
-  //       id: 1,
-  //       name: 'React.js',
-  //       path: '/assets/react.svg',
-  //     },
-  //     {
-  //       id: 2,
-  //       name: 'TailwindCSS',
-  //       path: 'assets/tailwindcss.png',
-  //     },
-  //     {
-  //       id: 3,
-  //       name: 'TypeScript',
-  //       path: '/assets/typescript.png',
-  //     },
-  //     {
-  //       id: 4,
-  //       name: 'Framer Motion',
-  //       path: '/assets/framer.png',
-  //     },
-  //   ],
-  // },
+  {
+    title: 'StayEase - hotel management and booking System',
+    desc: 'StayEase is a comprehensive and user-friendly hotel management and booking app designed to simplify operations for hotel administrators and enhance the booking experience for guests. StayEase makes it easy to manage room inventory, handle reservations, and streamline guest interactions effortlessly. The app provides a seamless journey from room availability checks to secure online bookings, ensuring a smooth and efficient process for both staff and customers. Its clean design, fast loading times, and secure payment options guarantee a reliable and enjoyable experience for all users.',
+    subdesc:
+      'Built as a dynamic and modern platform, StayEase is designed for optimal performance and scalability. Leveraging the power of Spring Boot for robust backend functionality, Spring Security for secure authentication and authorization, MySQL for efficient data management, and React.js for a responsive and interactive user interface, StayEase is the perfect solution for hotels looking to create a reliable and high-performing management and booking system. This powerful combination of technologies ensures a seamless and professional experience for both hotel administrators and guests.',
+    // href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
+    texture: '/textures/project/StayEase.mp4',
+    logo: '/assets/StayEase_rm.png',
+    logoStyle: {
+      backgroundColor: '#13202F',
+      border: '0.2px solid #17293E',
+      boxShadow: '0px 0px 60px 0px #2F6DB54D',
+    },
+    spotlight: '/assets/spotlight2.png',
+    tags: [
+      {
+        id: 1,
+        name: 'React.js',
+        path: '/assets/react.svg',
+      },
+      {
+        id: 2,
+        name: 'TailwindCSS',
+        path: 'assets/tailwindcss.png',
+      },
+      {
+        id: 3,
+        name: 'JavaScript',
+        path: '/assets/js_logo_logos_icon.png',
+      },
+      {
+        id: 4,
+        name: 'Java',
+        path: '/assets/java_logo_logos_icon.png',
+      },
+      {
+        id: 5,
+        name: 'Spring Boot',
+        path: '/assets/spring_boot_icon.png',
+      },
+      {
+        id: 6,
+        name: 'MySql',
+        path: '/assets/mysql_icon.png',
+      },
+      {
+        id: 7,
+        name: 'Git',
+        path: '/assets/git.png',
+      },
+      {
+        id: 8,
+        name: 'VS Code',
+        path: '/assets/vs_code.png',
+      },
+      {
+        id: 9,
+        name: 'Intellij Idea',
+        path: '/assets/intellij.png',
+      },
+    ],
+  },
+  {
+    title: 'LearnSpace - E-Learning Android App (Academic Project)',
+    desc: 'LearnSpace is a sleek and user-friendly Android e-learning app designed to simplify online education for both learners and educators. LearnSpace makes it easy to browse, discover, and access educational content effortlessly. The app provides a seamless journey from course exploration to completion, with intuitive navigation and interactive features. Its clean design, fast loading times, and secure payment options ensure a reliable and enjoyable learning experience for everyone.',
+    subdesc:
+      'Built as a dynamic and modern e-learning platform, LearnSpace is designed for optimal performance and scalability. Leveraging the power of Java for robust app development, Android Studio for a seamless development environment, Firebase for real-time backend functionality, and SQLite for efficient local data management, LearnSpace is the perfect solution for educators and institutions looking to create a reliable and high-performing online learning environment. The use of XML ensures a visually appealing and responsive user interface, making learning accessible and engaging for all users.',
+    // href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
+    texture: '/textures/project/LearnSpace.mp4',
+    logo: '/assets/LearnSpace.png',
+    logoStyle: {
+      backgroundColor: '#60f5a1',
+      background:
+        'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
+      border: '0.2px solid rgba(208, 213, 221, 1)',
+      boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
+    },
+    spotlight: '/assets/spotlight3.png',
+    tags: [
+      {
+        id: 1,
+        name: 'Java',
+        path: '/assets/java_logo_logos_icon.png',
+      },
+      {
+        id: 2,
+        name: 'Xml',
+        path: 'assets/xml.png',
+      },
+      {
+        id: 3,
+        name: 'Android Studio',
+        path: '/assets/android.png',
+      },
+      {
+        id: 4,
+        name: 'SqLite',
+        path: '/assets/sqlite.png',
+      },
+      {
+        id: 5,
+        name: 'FireBase',
+        path: '/assets/firebase.png',
+      },
+      {
+        id: 6,
+        name: 'Git',
+        path: '/assets/git.png',
+      },
+    ],
+  },
+  {
+    title: 'DriveElite Admin - Admin Cars Rental System (Academic Project)',
+    desc: 'EliteDrive Admin is a sophisticated and user-friendly web application designed to streamline the management of a luxury car rental system. EliteDrive Admin makes it easy to oversee vehicle inventory, manage bookings, and monitor customer interactions effortlessly. The app provides a seamless journey from tracking reservations to generating reports, ensuring efficient operations for administrators. Its clean design, responsive layout, and secure access controls guarantee a reliable and enjoyable management experience.',
+    subdesc:
+      'Built as a dynamic and modern admin platform, EliteDrive Admin is designed for optimal performance and scalability. Leveraging the power of Symfony for robust backend functionality, HTML and Bootstrap for a responsive and visually appealing interface, Twig templates for efficient and modular frontend rendering, and MySQL for reliable data management, EliteDrive Admin is the perfect solution for luxury car rental businesses looking to maintain a high-performing and organized system. This powerful combination of technologies ensures a smooth and professional experience for administrators managing premium rental services.',
+    // href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
+    texture: '/textures/project/DriveElite.mp4',
+    logo: '/assets/project-logo4.png',
+    logoStyle: {
+      backgroundColor: '#0E1F38',
+      border: '0.2px solid #0E2D58',
+      boxShadow: '0px 0px 60px 0px #2F67B64D',
+    },
+    spotlight: '/assets/spotlight4.png',
+    tags: [
+      {
+        id: 1,
+        name: 'Php',
+        path: '/assets/php_icon.png',
+      },
+      {
+        id: 2,
+        name: 'Symfony',
+        path: 'assets/symfony.png',
+      },
+      {
+        id: 3,
+        name: 'Html',
+        path: '/assets/html.png',
+      },
+      {
+        id: 4,
+        name: 'Bootstrap',
+        path: '/assets/bootstrap_icon.png',
+      },
+      {
+        id: 5,
+        name: 'JavaScript',
+        path: '/assets/js_logo_logos_icon.png',
+      },
+      {
+        id: 6,
+        name: 'MySql',
+        path: '/assets/mysql_icon.png',
+      },
+      {
+        id: 7,
+        name: 'Git',
+        path: '/assets/git.png',
+      },
+      {
+        id: 8,
+        name: 'VS Code',
+        path: '/assets/vs_code.png',
+      },
+    ],
+  },
   // {
   //   title: 'Imaginify - AI Photo Manipulation App',
   //   desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',

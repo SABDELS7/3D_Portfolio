@@ -20,6 +20,7 @@ const Slider = () => {
     "assets/xml.png",
     "assets/vs_code.png",
     "assets/vs.png",
+    "assets/intellij.png",
   ];
 
   const lowerSlider = [
@@ -28,19 +29,21 @@ const Slider = () => {
     "assets/php_icon.png",
     "assets/oracle_icon.png",
     "assets/mysql_icon.png",
+    "assets/postgresql.png",
+    "assets/sqlite.png",
     "assets/mongodb.png",
     "assets/git.png",
     "assets/github.svg",
-    // "assets/docker.png",
-    // "assets/kubernetes_icon.png",
-    // "assets/jenkins_icon.png",
+    "assets/docker.png",
+    "assets/kubernetes_icon.png",
+    "assets/jenkins_icon.png",
     // "assets/aws.png",
     // "assets/azure_icon.png",
     "assets/windows_icon.png",
     "assets/linux_icon.png",
     "assets/figma.png",
     "assets/canva.png",
-    // "assets/kafka.png",
+    "assets/kafka.png",
   ];
 
   return (
