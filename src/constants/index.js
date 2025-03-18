@@ -80,7 +80,7 @@ export const myProjects = [
       {
         id: 2,
         name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
+        path: 'assets/tailwind_icon.png',
       },
       {
         id: 3,
