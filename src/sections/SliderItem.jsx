@@ -71,7 +71,7 @@ const SliderItem = ({ images, from, to }) => {
     //   </motion.div>
     // </div>
 
-    <div className="flex overflow-hidden bg-gray-900 py-8">
+    <div className="flex overflow-hidden py-8">  {/* bg-gray-900*/}
       {/* First Row of Logos */}
       <motion.div
         initial={{ x: `${from}` }}
