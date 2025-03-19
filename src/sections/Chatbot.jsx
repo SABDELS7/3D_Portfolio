@@ -5,21 +5,20 @@ import { FaRobot, FaPaperPlane, FaCommentDots } from "react-icons/fa";
 const Chatbot = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([
-    { role: "bot", content: "Hello! Ask me anything about Abderrahmane." }
+    { role: "bot", content: "Hello! Ask me anything about Abderrahmane." },
   ]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const messagesEndRef = useRef(null);
 
-  // Replace with your Wit.ai access token
-  const WIT_API_KEY = import.meta.env.VITE_WIT_API_KEY; 
+  const WIT_API_KEY = import.meta.env.VITE_WIT_API_KEY || "";
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
   const sendMessage = async () => {
-    if (!input.trim()) return;
+    if (!input.trim() || loading) return;
 
     const newMessages = [...messages, { role: "user", content: input }];
     setMessages(newMessages);
@@ -27,21 +26,17 @@ const Chatbot = () => {
     setLoading(true);
 
     try {
-      // Call Wit.ai API to process the user message
       const response = await axios.get("https://api.wit.ai/message", {
-        params: {
-          v: "20230331", // API version
-          q: input, // The user's input
-        },
-        headers: {
-          Authorization: `Bearer ${WIT_API_KEY}`,
-        },
+        params: { v: "20230331", q: input },
+        headers: { Authorization: `Bearer ${WIT_API_KEY}` },
       });
 
-      // Process the Wit.ai response and generate a reply
-      const witResponse = response.data;
-      const botReply = getBotReply(witResponse); // Extract or customize the bot's response
+      if (!response.data) {
+        throw new Error("No response from Wit.ai");
+      }
 
+      const witResponse = response.data;
+      const botReply = getBotReply(witResponse);
       setMessages([...newMessages, { role: "bot", content: botReply }]);
     } catch (error) {
       console.error("Error calling Wit.ai:", error);
@@ -49,27 +44,27 @@ const Chatbot = () => {
         ...newMessages,
         { role: "bot", content: "Oops! Something went wrong. Try again later." },
       ]);
+    } finally {
+      setLoading(false);
     }
-    setLoading(false);
   };
 
-  // Customize the bot's response based on the Wit.ai response
   const getBotReply = (witResponse) => {
-    // Check if Wit.ai returned any entities or intents
     if (witResponse.entities && witResponse.entities.intent) {
       const intent = witResponse.entities.intent[0].value;
 
-      // Example intents you might have set up in Wit.ai
-      if (intent === "greet") {
-        return "Hello! How can I help you today?";
-      } else if (intent === "ask_about_abderrahmane") {
-        return "Abderrahmane is a software engineer.";
-      } else if (intent === "ask_for_help") {
-        return "Sure! How can I assist you?";
+      switch (intent) {
+        case "greet":
+          return "Hello! How can I help you today?";
+        case "ask_about_abderrahmane":
+          return "Abderrahmane is a software engineer.";
+        case "ask_for_help":
+          return "Sure! How can I assist you?";
+        default:
+          return "I'm not sure how to answer that. Can you rephrase?";
       }
     }
 
-    // Default response if no relevant intent is matched
     return "I'm not sure how to answer that. Can you rephrase?";
   };
 
@@ -79,18 +74,26 @@ const Chatbot = () => {
         <button
           onClick={() => setIsOpen(true)}
           className="z-[10000] bg-gray-800 text-white p-3 rounded-full shadow-lg hover:bg-gray-600"
+          aria-label="Open chatbot"
         >
           <FaCommentDots size={24} />
         </button>
       )}
 
       {isOpen && (
-        <div className="w-80 z-[10000] bg-gray-700 rounded-lg shadow-lg p-4 flex flex-col">
+        <div
+          className={`w-80 z-[10000] bg-gray-700 rounded-lg shadow-lg p-4 flex flex-col transition-all duration-300 ${
+            isOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+          }`}
+        >
           <div className="flex items-center justify-between pb-2 border-b">
             <h2 className="text-lg text-white font-semibold flex items-center">
               <FaRobot className="mr-2" /> AI Chatbot
             </h2>
-            <button onClick={() => setIsOpen(false)} className="text-white font-bold">
+            <button
+              onClick={() => setIsOpen(false)}
+              className="text-white font-bold"
+            >
               X
             </button>
           </div>

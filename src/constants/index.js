@@ -88,11 +88,11 @@ export const myProjects = [
         name: 'TailwindCSS',
         path: 'assets/tailwind_icon.png',
       },
-      {
-        id: 3,
-        name: 'JavaScript',
-        path: '/assets/js_logo_logos_icon.png',
-      },
+      // {
+      //   id: 3,
+      //   name: 'JavaScript',
+      //   path: '/assets/js_logo_logos_icon.png',
+      // },
       {
         id: 4,
         name: 'Node.js',
@@ -108,16 +108,16 @@ export const myProjects = [
         name: 'MongoDB',
         path: '/assets/mongodb.png',
       },
-      {
-        id: 7,
-        name: 'Git',
-        path: '/assets/git.png',
-      },
-      {
-        id: 8,
-        name: 'VS Code',
-        path: '/assets/vs_code.png',
-      },
+      // {
+      //   id: 7,
+      //   name: 'Git',
+      //   path: '/assets/git.png',
+      // },
+      // {
+      //   id: 8,
+      //   name: 'VS Code',
+      //   path: '/assets/vs_code.png',
+      // },
     ],
   },
   {
@@ -145,11 +145,11 @@ export const myProjects = [
         name: 'TailwindCSS',
         path: 'assets/tailwindcss.png',
       },
-      {
-        id: 3,
-        name: 'JavaScript',
-        path: '/assets/js_logo_logos_icon.png',
-      },
+      // {
+      //   id: 3,
+      //   name: 'JavaScript',
+      //   path: '/assets/js_logo_logos_icon.png',
+      // },
       {
         id: 4,
         name: 'Java',
@@ -165,21 +165,21 @@ export const myProjects = [
         name: 'MySql',
         path: '/assets/mysql_icon.png',
       },
-      {
-        id: 7,
-        name: 'Git',
-        path: '/assets/git.png',
-      },
-      {
-        id: 8,
-        name: 'VS Code',
-        path: '/assets/vs_code.png',
-      },
-      {
-        id: 9,
-        name: 'Intellij Idea',
-        path: '/assets/intellij.png',
-      },
+      // {
+      //   id: 7,
+      //   name: 'Git',
+      //   path: '/assets/git.png',
+      // },
+      // {
+      //   id: 8,
+      //   name: 'VS Code',
+      //   path: '/assets/vs_code.png',
+      // },
+      // {
+      //   id: 9,
+      //   name: 'Intellij Idea',
+      //   path: '/assets/intellij.png',
+      // },
     ],
   },
   {
@@ -207,11 +207,11 @@ export const myProjects = [
         name: 'TailwindCSS',
         path: 'assets/tailwindcss.png',
       },
-      {
-        id: 3,
-        name: 'JavaScript',
-        path: '/assets/js_logo_logos_icon.png',
-      },
+      // {
+      //   id: 3,
+      //   name: 'JavaScript',
+      //   path: '/assets/js_logo_logos_icon.png',
+      // },
       {
         id: 4,
         name: 'Java',
@@ -227,21 +227,21 @@ export const myProjects = [
         name: 'MySql',
         path: '/assets/mysql_icon.png',
       },
-      {
-        id: 7,
-        name: 'Git',
-        path: '/assets/git.png',
-      },
-      {
-        id: 8,
-        name: 'VS Code',
-        path: '/assets/vs_code.png',
-      },
-      {
-        id: 9,
-        name: 'Intellij Idea',
-        path: '/assets/intellij.png',
-      },
+      // {
+      //   id: 7,
+      //   name: 'Git',
+      //   path: '/assets/git.png',
+      // },
+      // {
+      //   id: 8,
+      //   name: 'VS Code',
+      //   path: '/assets/vs_code.png',
+      // },
+      // {
+      //   id: 9,
+      //   name: 'Intellij Idea',
+      //   path: '/assets/intellij.png',
+      // },
     ],
   },
   {
@@ -271,11 +271,11 @@ export const myProjects = [
         name: 'Xml',
         path: 'assets/xml.png',
       },
-      {
-        id: 3,
-        name: 'Android Studio',
-        path: '/assets/android.png',
-      },
+      // {
+      //   id: 3,
+      //   name: 'Android Studio',
+      //   path: '/assets/android.png',
+      // },
       {
         id: 4,
         name: 'SqLite',
@@ -286,11 +286,11 @@ export const myProjects = [
         name: 'FireBase',
         path: '/assets/firebase.png',
       },
-      {
-        id: 6,
-        name: 'Git',
-        path: '/assets/git.png',
-      },
+      // {
+      //   id: 6,
+      //   name: 'Git',
+      //   path: '/assets/git.png',
+      // },
     ],
   },
   {
@@ -338,16 +338,16 @@ export const myProjects = [
         name: 'MySql',
         path: '/assets/mysql_icon.png',
       },
-      {
-        id: 7,
-        name: 'Git',
-        path: '/assets/git.png',
-      },
-      {
-        id: 8,
-        name: 'VS Code',
-        path: '/assets/vs_code.png',
-      },
+      // {
+      //   id: 7,
+      //   name: 'Git',
+      //   path: '/assets/git.png',
+      // },
+      // {
+      //   id: 8,
+      //   name: 'VS Code',
+      //   path: '/assets/vs_code.png',
+      // },
     ],
   },
   // {
