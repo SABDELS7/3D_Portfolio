@@ -1,0 +1,51 @@
+{
+    "name": "Abderrahmane Salmi",
+    "title": "Software Engineer | AI & Web Developer",
+    "description": "I am a software engineering student and the president of Club Génie Informatique. I specialize in web and mobile development, AI, and cloud computing. I have built projects in React, Spring Boot, MySQL, and other modern technologies.",
+    "skills": [
+      "React",
+      "Node.js",
+      "MySQL",
+      "Spring Boot",
+      "Three.js",
+      "Tailwind CSS",
+      "Redux",
+      "Symfony",
+      "ASP.NET",
+      "Java",
+      "Python"
+    ],
+    "projects": [
+      {
+        "name": "3D Portfolio",
+        "description": "An interactive 3D portfolio using React, Three.js, and Tailwind CSS with a chatbot powered by Gemini AI."
+      },
+      {
+        "name": "LearnSpace",
+        "description": "An Android-based online learning platform built with Java."
+      },
+      {
+        "name": "E-Commerce Platform",
+        "description": "A full-stack e-commerce system with MERN stack, translation options, light/dark mode, and cookie management."
+      },
+      {
+        "name": "Crypto Trading Platform",
+        "description": "A cryptocurrency trading platform with integrated AI chatbot (Gemini) using Spring Boot, React, MySQL, and Redux."
+      },
+      {
+        "name": "Partnership Management System",
+        "description": "A web-based PFA project for managing preschool partnerships, including financial and pedagogical tracking."
+      }
+    ],
+    "company": {
+      "name": "Arcade Nexus",
+      "description": "A software company focused on AI solutions, web and mobile development, e-commerce, and game development."
+    },
+    "contact": {
+      "email": "your-email@example.com",
+      "website": "your-portfolio-website.com",
+      "linkedin": "linkedin.com/in/yourprofile",
+      "github": "github.com/yourgithub"
+    }
+  }
+  

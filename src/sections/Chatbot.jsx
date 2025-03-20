@@ -1,17 +1,19 @@
 import { useState, useEffect, useRef } from "react";
 import axios from "axios";
+// import { GoogleGenerativeAI } from "@google/generative-ai";
 import { FaRobot, FaPaperPlane, FaCommentDots } from "react-icons/fa";
 
 const Chatbot = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([
-    { role: "bot", content: "Hello! Ask me anything about Abderrahmane." },
+    { role: "bot", content: "Hello! Ask me anything about Mr. Abderrahmane." },
   ]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const messagesEndRef = useRef(null);
 
-  const WIT_API_KEY = import.meta.env.VITE_WIT_API_KEY || "";
+//   const API_KEY = import.meta.env.VITE_GEMINI_API_KEY || "";
+//   const genAI = new GoogleGenerativeAI(API_KEY);
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -19,27 +21,22 @@ const Chatbot = () => {
 
   const sendMessage = async () => {
     if (!input.trim() || loading) return;
-
+  
     const newMessages = [...messages, { role: "user", content: input }];
     setMessages(newMessages);
     setInput("");
     setLoading(true);
-
+  
     try {
-      const response = await axios.get("https://api.wit.ai/message", {
-        params: { v: "20230331", q: input },
-        headers: { Authorization: `Bearer ${WIT_API_KEY}` },
-      });
-
+      const response = await axios.post("http://localhost:5000/chat", { message: input });
+  
       if (!response.data) {
-        throw new Error("No response from Wit.ai");
+        throw new Error("No response from the server");
       }
-
-      const witResponse = response.data;
-      const botReply = getBotReply(witResponse);
-      setMessages([...newMessages, { role: "bot", content: botReply }]);
+  
+      setMessages([...newMessages, { role: "bot", content: response.data.reply }]);
     } catch (error) {
-      console.error("Error calling Wit.ai:", error);
+      console.error("Error:", error);
       setMessages([
         ...newMessages,
         { role: "bot", content: "Oops! Something went wrong. Try again later." },
@@ -48,25 +45,7 @@ const Chatbot = () => {
       setLoading(false);
     }
   };
-
-  const getBotReply = (witResponse) => {
-    if (witResponse.entities && witResponse.entities.intent) {
-      const intent = witResponse.entities.intent[0].value;
-
-      switch (intent) {
-        case "greet":
-          return "Hello! How can I help you today?";
-        case "ask_about_abderrahmane":
-          return "Abderrahmane is a software engineer.";
-        case "ask_for_help":
-          return "Sure! How can I assist you?";
-        default:
-          return "I'm not sure how to answer that. Can you rephrase?";
-      }
-    }
-
-    return "I'm not sure how to answer that. Can you rephrase?";
-  };
+  
 
   return (
     <div className="fixed bottom-4 right-4 z-[10000] flex flex-col items-end">

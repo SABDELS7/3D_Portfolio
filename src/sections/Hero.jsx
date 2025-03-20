@@ -1,5 +1,5 @@
 import { Leva } from 'leva';
-import { Suspense } from 'react';
+import { Suspense, useMemo } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { useMediaQuery } from 'react-responsive';
 import { PerspectiveCamera } from '@react-three/drei';
@@ -20,7 +20,8 @@ const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
   const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
 
-  const sizes = calculateSizes(isSmall, isMobile, isTablet);
+  // Memoize sizes to avoid recalculating on every render
+  const sizes = useMemo(() => calculateSizes(isSmall, isMobile, isTablet), [isSmall, isMobile, isTablet]);
 
   return (
     <section className="min-h-screen w-full flex flex-col relative" id="home">
@@ -32,7 +33,10 @@ const Hero = () => {
       </div>
 
       <div className="w-full h-full absolute inset-0">
-        <Canvas className="w-full h-full">
+        <Canvas
+          className="w-full h-full"
+          gl={{ antialias: false, powerPreference: 'high-performance' }} // Improved Canvas settings
+        >
           <Suspense fallback={<CanvasLoader />}>
             {/* To hide controller */}
             <Leva hidden />
