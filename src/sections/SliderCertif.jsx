@@ -8,6 +8,8 @@ const Slider = () => {
     "assets/react.jpg",
     "assets/git_certif.jpg",
     "assets/coursera_figma.jpg",
+    "assets/Oracle java.jpg",
+    "assets/java badge.jpg",
     // "assets/redux_icon.png",
     // "assets/tailwindcss.png",
     // "assets/bootstrap_icon.png",

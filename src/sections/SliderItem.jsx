@@ -71,7 +71,7 @@ const SliderItem = ({ images, from, to }) => {
     //   </motion.div>
     // </div>
 
-    <div className="flex overflow-hidden py-8">  {/* bg-gray-900*/}
+    <div className="flex overflow-hidden py-8" >  {/* bg-gray-900*/}
       {/* First Row of Logos */}
       <motion.div
         initial={{ x: `${from}` }}
@@ -82,7 +82,7 @@ const SliderItem = ({ images, from, to }) => {
         {images.map((image, index) => (
           <div
             key={index}
-            className="h-24 w-36 pr-10 flex items-center justify-center hover:scale-110 transition-transform duration-300"
+            className="h-24 w-36 pr-10 flex items-center justify-center cursor-pointer hover:scale-110 transition-transform duration-300"
           >
             <img
               src={image}

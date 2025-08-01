@@ -5,7 +5,7 @@ import { SpeedInsights } from "@vercel/speed-insights/react";
 
 // Lazy load components to optimize performance
 const DownloadCV = lazy(() => import('./sections/DownloadCV.jsx'));
-const Chatbot = lazy(() => import('./sections/Chatbot.jsx'));
+// const Chatbot = lazy(() => import('./sections/Chatbot.jsx'));
 const Hero = lazy(() => import('./sections/Hero.jsx'));
 const About = lazy(() => import('./sections/About.jsx'));
 const Slider = lazy(() => import('./sections/Slider.jsx'));
@@ -23,7 +23,7 @@ const App = () => {
       {/* Suspense for lazy-loaded components */}
       <Suspense fallback={<div>Loading...</div>}>
         <DownloadCV />
-        <Chatbot />
+        {/* <Chatbot /> */}
         <Hero />
         <About />
         <Slider />

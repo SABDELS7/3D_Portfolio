@@ -63,6 +63,122 @@ export const clientReviews = [
 
 export const myProjects = [
   {
+    title:'Professional Experience: PFA Internship – Medical Management System | SQLI Oujda (4 Members) – 01/06/2025 to 31/07/2025',
+    desc: ' As an intern at SQLI Oujda, I contributed to the development of a medical management platform used by company employees to schedule and track annual, Spontaneous, Hiring, Maternity, Work Accident... medical check-ups. The system supported three roles: Collaborator, HR, and Doctor, and was built with a focus on clean architecture and enterprise-level standards.',
+    subdesc:
+      'Participated in system design using Hexagonal Architecture, CQRS, and TDD. Developed features with Symfony 7.3.1, Twig, Bootstrap, JavaScript, and MySQL. Integrated LDAP for authentication and role-based accessWrote unit tests using PHPUnit. Ensured code quality with PHPStan, CS Fixer, and SonarQubeUsed Mercure for real-time communication. Set up a full pre-production environment with Docker and Ansible. Built CI/CD pipelines with GitLab CE. Collaborated via Git and GitLab following team workflows.',
+    // href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
+    texture: '/textures/project/TimeLuxe.mp4',
+    logo: '/assets/sqli.webp',
+    logoStyle: {
+      backgroundColor: '#FFFFFF',
+      border: '0.2px solid #36201D',
+      boxShadow: '0px 0px 60px 0px #AA3C304D',
+    },
+    spotlight: '/assets/spotlight1.png',
+    tags: [
+      {
+        id: 1,
+        name: 'PHP',
+        path: '/assets/php_icon.png',
+      },
+
+      {
+        id: 2,
+        name: 'Symfony',
+        path: 'assets/symfony.png',
+      },
+      {
+        id: 3,
+        name: 'JavaScript',
+        path: '/assets/js_logo_logos_icon.png',
+      },
+      {
+        id: 4,
+        name: 'MySql',
+        path: '/assets/mysql_icon.png',
+      },
+      {
+        id: 5,
+        name: 'Gitlab',
+        path: '/assets/gitlab.png',
+      },
+      {
+        id: 6,
+        name: 'Docker',
+        path: '/assets/docker.png',
+      },
+      {
+        id: 7,
+        name: 'Ansible',
+        path: '/assets/ansible.png',
+      },
+      // {
+      //   id: 8,
+      //   name: 'VS Code',
+      //   path: '/assets/vs_code.png',
+      // },
+    ],
+  },
+   {
+    title:'Professional Experience:  End-of-Studies Project (PFA) –  Management of preschool partnerships within the academy:  financial and pedagogical tracking | The Regional Academy for Education and Vocational Training of the Oriental Region (3 Members)',
+    desc: 'Development of a web solution and application to manage preschool partnerships within the Regional Academy for Education and Vocational Training of the Oriental region, with financial and pedagogical tracking of partner institutions. This system facilitates contract management, grant and budget tracking, as well as evaluation of the educational quality of preschools using a dashboard that gives real-time visibility of performance indicators. And implementing an Ai Agent to give reports and insights.',
+    // subdesc:
+      // 'Participated in system design using Hexagonal Architecture, CQRS, and TDD. Developed features with Symfony 7.3.1, Twig, Bootstrap, JavaScript, and MySQL. Integrated LDAP for authentication and role-based accessWrotll pre-production environment with Docker and Ansi via Git and GitLab following team workflows.',
+    // href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
+    texture: '/textures/project/TimeLuxe.mp4',
+    logo: '/assets/charaka.png',
+    logoStyle: {
+      backgroundColor: '#FFFFFF',
+      border: '0.2px solid #36201D',
+      boxShadow: '0px 0px 60px 0px #AA3C304D',
+    },
+    spotlight: '/assets/spotlight1.png',
+    tags: [
+      {
+        id: 1,
+        name: 'Java',
+        path: '/assets/java_logo_logos_icon.png',
+      },
+
+      {
+        id: 2,
+        name: 'Spring Boot',
+        path: 'assets/spring_boot_icon.png',
+      },
+      {
+        id: 3,
+        name: 'TypeScript',
+        path: '/assets/typescript_icon.png',
+      },
+      {
+        id: 4,
+        name: 'Next Js',
+        path: '/assets/nextjs_icon.png',
+      },
+      {
+        id: 5,
+        name: 'PostgreSql',
+        path: '/assets/postgresql.png',
+      },
+      {
+        id: 6,
+        name: 'Github Actions',
+        path: '/assets/github_actions.png',
+      },
+      {
+        id: 7,
+        name: 'Docker',
+        path: '/assets/docker.png',
+      },
+      // {
+      //   id: 8,
+      //   name: 'VS Code',
+      //   path: '/assets/vs_code.png',
+      // },
+    ],
+  },
+  {
     title: 'TimeLuxe - E-Commerce website',
     desc: 'TimeLuxe is a sleek and user-friendly ecommerce website for watches designed to simplify online shopping for both businesses and customers. TimeLuxe makes it easy to browse, discover, and purchase products effortlessly. TimeLuxe provides a seamless journey from product exploration to checkout. Its clean design, fast loading times, and secure payment options ensure a reliable and enjoyable shopping experience for everyone.',
     subdesc:
@@ -120,68 +236,68 @@ export const myProjects = [
       // },
     ],
   },
-  {
-    title: 'CryptoGem - Cryptocurrency Trading Platform with an integrated chatbot powered by Google Gemini AI',
-    desc: 'CryptoGem is a cutting-edge cryptocurrency trading platform that combines advanced trading tools with an intelligent chatbot powered by Gemini AI. CryptoGem offers real-time market analysis, personalized trading insights, and seamless transaction execution. The integrated Gemini-powered chatbot provides instant support, answers trading queries, and delivers actionable recommendations, making it easier than ever to navigate the volatile crypto market. With a focus on security, speed, and user experience, CryptoGem is your ultimate partner in cryptocurrency trading.',
-    subdesc:
-      'CryptoGem leverages React for a dynamic and responsive frontend. The backend is powered by Spring Boot, providing a secure and scalable foundation for handling complex trading operations. Tailwind CSS is used to create a sleek and modern design, while MySQL ensures reliable and efficient data management. These technologies deliver a high-performance platform that meets the demands of today\'s crypto traders.',
-    // href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
-    texture: '/textures/project/project2.mp4',
-    logo: '/assets/crypto_rm.png',
-    logoStyle: {
-      backgroundColor: '#13202F',
-      border: '0.2px solid #17293E',
-      boxShadow: '0px 0px 60px 0px #2F6DB54D',
-    },
-    spotlight: '/assets/spotlight2.png',
-    tags: [
-      {
-        id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
-      },
-      {
-        id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
-      },
-      // {
-      //   id: 3,
-      //   name: 'JavaScript',
-      //   path: '/assets/js_logo_logos_icon.png',
-      // },
-      {
-        id: 4,
-        name: 'Java',
-        path: '/assets/java_logo_logos_icon.png',
-      },
-      {
-        id: 5,
-        name: 'Spring Boot',
-        path: '/assets/spring_boot_icon.png',
-      },
-      {
-        id: 6,
-        name: 'MySql',
-        path: '/assets/mysql_icon.png',
-      },
-      // {
-      //   id: 7,
-      //   name: 'Git',
-      //   path: '/assets/git.png',
-      // },
-      // {
-      //   id: 8,
-      //   name: 'VS Code',
-      //   path: '/assets/vs_code.png',
-      // },
-      // {
-      //   id: 9,
-      //   name: 'Intellij Idea',
-      //   path: '/assets/intellij.png',
-      // },
-    ],
-  },
+  // {
+  //   title: 'CryptoGem - Cryptocurrency Trading Platform with an integrated chatbot powered by Google Gemini AI',
+  //   desc: 'CryptoGem is a cutting-edge cryptocurrency trading platform that combines advanced trading tools with an intelligent chatbot powered by Gemini AI. CryptoGem offers real-time market analysis, personalized trading insights, and seamless transaction execution. The integrated Gemini-powered chatbot provides instant support, answers trading queries, and delivers actionable recommendations, making it easier than ever to navigate the volatile crypto market. With a focus on security, speed, and user experience, CryptoGem is your ultimate partner in cryptocurrency trading.',
+  //   subdesc:
+  //     'CryptoGem leverages React for a dynamic and responsive frontend. The backend is powered by Spring Boot, providing a secure and scalable foundation for handling complex trading operations. Tailwind CSS is used to create a sleek and modern design, while MySQL ensures reliable and efficient data management. These technologies deliver a high-performance platform that meets the demands of today\'s crypto traders.',
+  //   // href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
+  //   texture: '/textures/project/project2.mp4',
+  //   logo: '/assets/crypto_rm.png',
+  //   logoStyle: {
+  //     backgroundColor: '#13202F',
+  //     border: '0.2px solid #17293E',
+  //     boxShadow: '0px 0px 60px 0px #2F6DB54D',
+  //   },
+  //   spotlight: '/assets/spotlight2.png',
+  //   tags: [
+  //     {
+  //       id: 1,
+  //       name: 'React.js',
+  //       path: '/assets/react.svg',
+  //     },
+  //     {
+  //       id: 2,
+  //       name: 'TailwindCSS',
+  //       path: 'assets/tailwindcss.png',
+  //     },
+  //     // {
+  //     //   id: 3,
+  //     //   name: 'JavaScript',
+  //     //   path: '/assets/js_logo_logos_icon.png',
+  //     // },
+  //     {
+  //       id: 4,
+  //       name: 'Java',
+  //       path: '/assets/java_logo_logos_icon.png',
+  //     },
+  //     {
+  //       id: 5,
+  //       name: 'Spring Boot',
+  //       path: '/assets/spring_boot_icon.png',
+  //     },
+  //     {
+  //       id: 6,
+  //       name: 'MySql',
+  //       path: '/assets/mysql_icon.png',
+  //     },
+  //     // {
+  //     //   id: 7,
+  //     //   name: 'Git',
+  //     //   path: '/assets/git.png',
+  //     // },
+  //     // {
+  //     //   id: 8,
+  //     //   name: 'VS Code',
+  //     //   path: '/assets/vs_code.png',
+  //     // },
+  //     // {
+  //     //   id: 9,
+  //     //   name: 'Intellij Idea',
+  //     //   path: '/assets/intellij.png',
+  //     // },
+  //   ],
+  // },
   {
     title: 'StayEase - hotel management and booking System',
     desc: 'StayEase is a comprehensive and user-friendly hotel management and booking app designed to simplify operations for hotel administrators and enhance the booking experience for guests. StayEase makes it easy to manage room inventory, handle reservations, and streamline guest interactions effortlessly. The app provides a seamless journey from room availability checks to secure online bookings, ensuring a smooth and efficient process for both staff and customers. Its clean design, fast loading times, and secure payment options guarantee a reliable and enjoyable experience for all users.',

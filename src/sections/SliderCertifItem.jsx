@@ -10,7 +10,7 @@ const SliderItem = ({ images, from, to }) => {
         className="flex flex-shrink-0"
       >
         {[...images,...images,...images].map((image, index) => {
-          return <img className="h-40 w-90 pr-20" src={image} key={index} alt="Certification" />;
+          return <img className="h-40 w-90 pr-20 cursor-pointer" src={image} key={index} alt="Certification" />;
         })}
       </motion.div>
 

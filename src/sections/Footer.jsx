@@ -10,22 +10,27 @@ const Footer = () => {
       <div className="flex gap-3">
         <div className="social-icon">
           <a href="https://github.com/SABDELS7" target="_blank" rel="noopener noreferrer">
-            <img src="/assets/github.svg" alt="github" className="w-1/2 h-1/2 ml-3" />
+            <img src="/assets/github.svg" alt="Github" className="w-1/2 h-1/2 ml-3" />
+          </a>
+        </div>
+        <div className="social-icon">
+          <a href="https://www.salesforce.com/trailblazer/euob4qvsgdbfmp2t5v" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/salesforce.svg" alt="Salesforce" className="w-1/2 h-1/2 ml-3" />
           </a>
         </div>
         <div className="social-icon">
           <a href="https://linkedin.com/in/abderrahmane-salmi-a1b329238" target="_blank" rel="noopener noreferrer">
-            <img src="/assets/linkedin.svg" alt="linkedin" className="w-1/2 h-1/2 ml-3" />
+            <img src="/assets/linkedin.svg" alt="Linkedin" className="w-1/2 h-1/2 ml-3" />
           </a>
         </div>
         <div className="social-icon">
           <a href="https://twitter.com/S_Abdels_7" target="_blank" rel="noopener noreferrer">
-            <img src="/assets/twitter.svg" alt="twitter" className="w-1/2 h-1/2 ml-3" />
+            <img src="/assets/twitter.svg" alt="X (Twitter)" className="w-1/2 h-1/2 ml-3" />
           </a>
         </div>
         <div className="social-icon">
           <a href="https://instagram.com/s.abdels7" target="_blank" rel="noopener noreferrer">
-            <img src="/assets/instagram.svg" alt="instagram" className="w-1/2 h-1/2 ml-3" />
+            <img src="/assets/instagram.svg" alt="Instagram" className="w-1/2 h-1/2 ml-3" />
           </a>
         </div>
       </div>
