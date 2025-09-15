@@ -44,8 +44,8 @@ const DownloadCVButton = () => {
 
             <div className="space-y-3">
               <a
-                href="/public/textures/CV_Abderrahmane_Salmi.pdf"
-                download="CV_Abderrahmane_Salmi_EN.pdf"
+                href="/public/textures//CV_Abderrahmane_Salmi_en.pdf"
+                download="CV_Abderrahmane_Salmi_en.pdf"
                 onClick={() => setShow(false)}
                 className="block w-full text-center bg-gray-800 text-white py-2 rounded hover:bg-gray-600 transition"
               >
@@ -54,7 +54,7 @@ const DownloadCVButton = () => {
 
               <a
                 href="/public/textures/CV_Abderrahmane_Salmi_fr.pdf"
-                download="CV_Abderrahmane_Salmi_FR.pdf"
+                download="CV_Abderrahmane_Salmi_fr.pdf"
                 onClick={() => setShow(false)}
                 className="block w-full text-center bg-gray-800 text-white py-2 rounded hover:bg-gray-600 transition"
               >
