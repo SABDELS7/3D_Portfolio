@@ -77,11 +77,11 @@ export const myProjects = [
     },
     spotlight: '/assets/spotlight1.png',
     tags: [
-      {
-        id: 1,
-        name: 'PHP',
-        path: '/assets/php_icon.png',
-      },
+      // {
+      //   id: 1,
+      //   name: 'PHP',
+      //   path: '/assets/php_icon.png',
+      // },
 
       {
         id: 2,
@@ -121,7 +121,7 @@ export const myProjects = [
     ],
   },
    {
-    title:'Professional Experience:  End-of-Studies Project (PFA) –  Management of preschool partnerships within the academy:  financial and pedagogical tracking | The Regional Academy for Education and Vocational Training of the Oriental Region (3 Members)',
+    title:'Professional Experience: End-of-Studies Project (PFA) –  Management of preschool partnerships within the academy:  financial and pedagogical tracking | The Regional Academy for Education and Vocational Training of the Oriental Region (3 Members)',
     desc: 'Development of a web solution and application to manage preschool partnerships within the Regional Academy for Education and Vocational Training of the Oriental region, with financial and pedagogical tracking of partner institutions. This system facilitates contract management, grant and budget tracking, as well as evaluation of the educational quality of preschools using a dashboard that gives real-time visibility of performance indicators. And implementing an Ai Agent to give reports and insights.',
     // subdesc:
       // 'Participated in system design using Hexagonal Architecture, CQRS, and TDD. Developed features with Symfony 7.3.1, Twig, Bootstrap, JavaScript, and MySQL. Integrated LDAP for authentication and role-based accessWrotll pre-production environment with Docker and Ansi via Git and GitLab following team workflows.',
