@@ -516,7 +516,7 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
   };
 };
 
-export const workExperiences = [
+export const academicExperiences = [
   {
     id: 1,
     name: 'Software Engineering Program',
@@ -545,3 +545,34 @@ export const workExperiences = [
     animation: 'salute',
   },
 ];
+
+export const professionalExperiences = [
+  {
+    id: 1,
+    name: 'Software Engineering Internship',
+    pos: 'Software Engineering Intern',
+    duration: '02/2026 - 08/2026 (6 months)',
+    title: "Netopia Solutions | Rabat, Full Stack Software Engineer(Java | Spring Boot | React).",
+    icon: '/assets/netopia_solutions_logo.jpg',
+    animation: 'victory',
+  },
+  {
+    id: 2,
+    name: 'Software Engineering Internship',
+    pos: 'Software Engineering Intern',
+    duration: '06/2025 - 08/2025 (2 months)',
+    title: "SQLI | Oujda, Full Stack Software Engineer(Php | Symfony).",
+    icon: '/assets/sqli_logo.jpg',
+    animation: 'clapping',
+  },
+  {
+    id: 3,
+    name: 'Software Engineering Internship',
+    pos: 'Software Engineering Intern',
+    duration: '03/2025 - 06/2025 (3 months)',
+    title: "L'académie régionale de l'éducation et de la formation professionnelle de l’oriental | Oujda, Full Stack Software Engineer(Java | Spring Boot | React | Next.js).",
+    icon: '/assets/unnamed.png',
+    animation: 'salute',
+  },
+];
+

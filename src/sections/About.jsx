@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Globe from 'react-globe.gl';
 
 import Button from '../components/Button.jsx';
@@ -7,7 +7,7 @@ const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText('abderrahmane.salmi23@ump.ac.ma');
+    navigator.clipboard.writeText('abderrahmane.salmi26@gmail.com');
     setHasCopied(true);
 
     setTimeout(() => {
@@ -61,8 +61,8 @@ document.querySelectorAll('.animate-fade-in-up').forEach((element) => {
             <div>
               <p className="grid-headtext">Hi, I’m Abderrahmane Salmi</p>
               <p className="grid-subtext">
-                Software Engineering Student, I have honed my skills in frontend, backend, creating dynamic
-                and responsive websites.
+                Software Engineering Student, I have honed my skills in frontend, backend and DevOps creating dynamic, powerfull
+                and responsive websites & applications.
               </p>
             </div>
           </div>
@@ -132,7 +132,7 @@ document.querySelectorAll('.animate-fade-in-up').forEach((element) => {
               <p className="grid-subtext text-center">Contact me</p>
               <div className="copy-container" onClick={handleCopy}>
                 <img src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'} alt="copy" />
-                <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white break-all">salmiabdderrahmanesalmi@gmail.com</p>
+                <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white break-all">abderrahmane.salmi26@gmail.com</p>
               </div>
             </div>
           </div>
