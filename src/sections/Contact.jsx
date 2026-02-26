@@ -10,10 +10,12 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({ from_name: '', reply_to: '', message: '' });
 
+  // Update form state on input change
   const handleChange = ({ target: { name, value } }) => {
     setForm({ ...form, [name]: value });
   };
 
+  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
@@ -23,7 +25,7 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         formRef.current,
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY // public key is now required
       )
       .then(
         () => {
@@ -34,6 +36,8 @@ const Contact = () => {
             text: 'Thank you for your message 😃',
             type: 'success',
           });
+
+          // Hide alert after 3 seconds
           setTimeout(() => hideAlert(), 3000);
         },
         (error) => {
@@ -49,87 +53,65 @@ const Contact = () => {
   };
 
   return (
-    <section
-      id="contact"
-      className="relative py-20 px-5 sm:px-10 lg:px-20"
-    >
+    <section className="c-space my-20" id="contact">
       {alert.show && <Alert {...alert} />}
 
-      {/* Background */}
-      <img
-        src="/assets/terminal.png"
-        alt="terminal-bg"
-        className="absolute inset-0 w-full h-full object-cover opacity-20"
-      />
+      <div className="relative min-h-screen flex items-center justify-center flex-col">
+        <img src="/assets/terminal.png" alt="terminal-bg" className="absolute inset-0 min-h-screen" />
 
-      <div className="relative max-w-3xl mx-auto w-full">
-        <h3 className="text-3xl sm:text-4xl font-bold text-center mb-6">
-          Let's talk
-        </h3>
+        <div className="contact-container">
+          <h3 className="head-text">Let's talk</h3>
+          <p className="text-lg text-white-600 mt-3">
+            Whether you’re looking to build a new website, improve your existing platform, or bring a unique project to
+            life, I’m here to help.
+          </p>
 
-        <p className="text-base sm:text-lg text-center text-white-600 mb-10 px-2">
-          Whether you’re looking to build a new website, improve your existing
-          platform, or bring a unique project to life, I’m here to help.
-        </p>
-
-        <form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          className="flex flex-col space-y-6"
-        >
-          <div>
-            <label className="block mb-2 text-sm font-medium">
-              Full Name
+          <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col space-y-7">
+            <label className="space-y-3">
+              <span className="field-label">Full Name</span>
+              <input
+                type="text"
+                name="from_name"
+                value={form.from_name}
+                onChange={handleChange}
+                required
+                className="field-input"
+                placeholder="ex., John Doe"
+              />
             </label>
-            <input
-              type="text"
-              name="from_name"
-              value={form.from_name}
-              onChange={handleChange}
-              required
-              placeholder="John Doe"
-              className="w-full px-4 py-3 rounded-lg bg-black/40 border border-gray-600 focus:outline-none focus:border-white transition"
-            />
-          </div>
 
-          <div>
-            <label className="block mb-2 text-sm font-medium">
-              Email Address
+            <label className="space-y-3">
+              <span className="field-label">Email address</span>
+              <input
+                type="email"
+                name="reply_to"
+                value={form.reply_to}
+                onChange={handleChange}
+                required
+                className="field-input"
+                placeholder="ex., johndoe@gmail.com"
+              />
             </label>
-            <input
-              type="email"
-              name="reply_to"
-              value={form.reply_to}
-              onChange={handleChange}
-              required
-              placeholder="johndoe@gmail.com"
-              className="w-full px-4 py-3 rounded-lg bg-black/40 border border-gray-600 focus:outline-none focus:border-white transition"
-            />
-          </div>
 
-          <div>
-            <label className="block mb-2 text-sm font-medium">
-              Your Message
+            <label className="space-y-3">
+              <span className="field-label">Your message</span>
+              <textarea
+                name="message"
+                value={form.message}
+                onChange={handleChange}
+                required
+                rows={5}
+                className="field-input"
+                placeholder="Share your thoughts or inquiries..."
+              />
             </label>
-            <textarea
-              name="message"
-              value={form.message}
-              onChange={handleChange}
-              required
-              rows={5}
-              placeholder="Share your thoughts..."
-              className="w-full px-4 py-3 rounded-lg bg-black/40 border border-gray-600 focus:outline-none focus:border-white transition resize-none"
-            />
-          </div>
 
-          <button
-            type="submit"
-            disabled={loading}
-            className="w-full py-3 rounded-lg bg-white text-black font-semibold hover:bg-gray-200 transition disabled:opacity-60"
-          >
-            {loading ? 'Sending...' : 'Send Message'}
-          </button>
-        </form>
+            <button className="field-btn" type="submit" disabled={loading}>
+              {loading ? 'Sending...' : 'Send Message'}
+              <img src="/assets/arrow-up.png" alt="arrow-up" className="field-btn_arrow" />
+            </button>
+          </form>
+        </div>
       </div>
     </section>
   );
